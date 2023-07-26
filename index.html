@@ -3,9 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fruit</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+<style>
+
+    .font-lato{font-family: 'Lato', sans-serif;}
+</style>
 </head>
-<body>
+<body class="font-lato">
+    <header>
+          <div class="navbar bg-[#F85559] rounded-[600px] mt-5 max-w-screen-xl w-auto ml-20 mr-20 px-  ">
+            <div class="navbar-end">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class= " visible lg:hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="hidden lg : menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                  <li><a>Home</a></li>
+                  <li><a>Pabout us</a></li>
+                  <li><a>shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-start">
+              <ul class="hidden lg:flex gap-8 -ml-[350px]   Text-[#FFF] font-medium	text-white text-lg">
+                <li>home</li>
+                <li>about us</li>
+                <li>shop</li>
+                <li>all fruits</li>
+              </ul>
+            </div>
+            <div class=" lg:-ml-[400px] flex flex-col lg:flex-row gap-4">
+              <div>
+                <img class="lg:w-[100px] h-[30px]" src="./images/logo.png" alt="">
+              </div>
+              <div class=" lg:font-bold text-3xl text-white 	">Fruit </div>
+              <div class=" lg:text-4xl text-white	">Burst</div>
+            </div>
+            <div class="navbar-end ">
+              <div class="  lg: p-140 w-[220px] py-2 px-4 rounded-full  bg-white mr-6">
+              
+              <div class="flex gap-32">
+                <div >
+                  <p class=" lg:visible mt-1 ml-1">search</p>
+                </div>
+                <button >
     
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  -mr-[10x]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                
+              </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+          <section>
+
+            <div class="carousel  mt-12 ml-10 mr-10">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img  src="./images/banner1.png" class="h-[500px] w-[1100px] ml-8 opacity-90" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle -mr-8">❮</a> 
+                    <div>
+                        <h5 class="text-7xl	font-extrabold	text-white text-center -mt-[150px]">Exotic tastes at  your <br> doorstep</h5>
+                        <p class="text-xl mt-3	font-medium text-white text-center">We supply highly quality organic products</p>
+                   <button class="bg-[#F85559] text-center text-white ml-[300px] mt-8 p-2">Shop Now</button>
+                    </div>
+                   
+                   <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full ml-6">
+                  <img class="h-[500px] w-[1100px] ml-8" src="./images/banner2.png" alt="">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle -mr-8 ">❮</a> 
+                    <div>
+                        <h5 class="text-7xl	font-extrabold	text-white text-center -mt-[150px]">Exotic tastes at  your <br> doorstep</h5>
+                        <p class="text-xl mt-3	font-medium text-white text-center">We supply highly quality organic products</p>
+                   <button class="bg-[#F85559] text-center text-white ml-[300px] mt-8 p-2">Shop Now</button>
+                    </div>
+
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img  class="h-[500px] w-[1100px] ml-16" src="./images/banner3.png" class="" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <div>
+                        <h5 class="text-7xl	font-extrabold	text-white text-center -mt-[150px]">Exotic tastes at  your <br> doorstep</h5>
+                        <p class="text-xl mt-3	font-medium text-white text-center">We supply highly quality organic products</p>
+                   <button class="bg-[#F85559] text-center text-white ml-[300px] mt-8 p-2">Shop Now</button>
+                    </div>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative ">
+                  <img  class="h-[500px] w-[1100px] ml-16" src="./images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <div>
+                        <h5 class="text-7xl	font-extrabold	text-white text-center -mt-[150px]">Exotic tastes at  your <br> doorstep</h5>
+                        <p class="text-xl mt-3	font-medium text-white text-center">We supply highly quality organic products</p>
+                   <button class="bg-[#F85559] text-center text-white ml-[300px] mt-8 p-2">Shop Now</button>
+                    </div>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+          </section>
+    </header>
+  
+    <main>
+
+
+    </main>
+
+<footer>
+
+
+
+</footer>
+
 </body>
 </html>
