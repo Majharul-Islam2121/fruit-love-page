@@ -17,7 +17,7 @@
 </head>
 <body class="font-lato">
 <header>
-<div class="navbar bg-[#F85559] rounded-[600px] mt-5 max-w-screen-xl w-auto ml-20 mr-20 px-  ">
+<div class=" navbar bg-none lg:bg-[#F85559] rounded-[600px] mt-5 max-w-screen-xl w-auto ml-20 mr-20 px-  ">
 <div class="navbar-end">
 <div class="dropdown">
 <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -41,7 +41,7 @@
 </div>
 <div class=" lg:-ml-[400px] flex flex-col lg:flex-row gap-4">
 <div>
-<img class="lg:w-[100px] h-[30px]" src="./images/logo.png" alt="">
+<img class="hidden lg:w-[100px] h-[30px]" src="./images/logo.png" alt="">
 </div>
 <div class=" lg:font-bold text-3xl text-white 	">Fruit </div>
 <div class=" lg:text-4xl text-white	">Burst</div>
@@ -51,7 +51,7 @@
 
 <div class="flex gap-32">
 <div >
-<p class=" lg:visible mt-1 ml-1">search</p>
+<p class="hidden lg:visible mt-1 ml-1">search</p>
 </div>
 <button >
 
@@ -68,7 +68,7 @@
 
 <section>
 
-<div class="carousel  mt-12 ml-10 mr-10 relative">
+<div class="carousel  mt-8 ml-10 mr-10 relative">
 <div id="slide1" class="carousel-item relative w-full">
 <img  src="./images/banner1.png" class="h-[500px] w-[1100px] ml-8 opacity-90" />
 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -160,7 +160,7 @@
 </section>
 
 
-<section class="grid  lg: grid-cols-4 gap-2 mt-7">
+<section class="grid grid-cols-1 lg: grid-cols-4 gap-2 mt-7">
 <div class="card  ml-2	 w-[300px] h-[400px]" style="border: 1px solid black;">
 <figure class="px-10 pt-10">
 <img src="./images/fruit6.png" alt="Shoes" class="" />
@@ -484,43 +484,63 @@
 </div>
 </div>
 
-<div class="text-center mt-10">
-<h1 class="font-extrabold text-5xl">Why Choose Us</h1>
-<p class="text-sm font-medium	space-y-2	mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-</div>
 
-<div class="mt-14 grid grid-cols-2">
-  <div class="flex gap-3">
-    <i class="fa-solid fa-people-group "></i>
-    <h2>Dedicated Team</h2>
-    </div>
-    <hr class="h-3 w-[100px] ml-5">
-    <p>Professional employees are there for you to pick
-       <br> the most amazing and fresh fruits.</p>
-  </div>
-  <div class="flex gap-3">
-    <i class="fa-solid fa-people-group "></i>
-    <h2>Dedicated Team</h2>
-    </div>
-    <hr class="h-3 w-[100px] ml-5">
-    <p>Professional employees are there for you to pick
-       <br> the most amazing and fresh fruits.</p>
-  </div>
-  <div class="flex gap-3">
-    <i class="fa-solid fa-people-group "></i>
-    <h2>Dedicated Team</h2>
-    </div>
-    <hr class="h-3 w-[100px] ml-5">
-    <p>Professional employees are there for you to pick
-       <br> the most amazing and fresh fruits.</p>
-  </div>
-  <img src="./images/banner1.png" alt="">
-</div>
 
+<section class="my-10 mt-20 mx-20">
+  <div class="my-10  text-center space-y-4">
+      <h1 class="text-4xl font-bold text-black ">Why Choose Us</h1>
+      <div class="flex justify-center">
+          <p class="font-medium text-sm	text-deal-description w-[615px]">
+              Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+      </div>
+  </div>
+  <div class="flex items-center">
+      <div class="w-[438px] space-y-8">
+          <div class="space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+              <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+              <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+               <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+      </div>
+      <div class="p-6 order-last lg:order-none">
+          <img src="images/whychoose1.png" alt="">
+      </div>
+      <div class=" w-[438px] space-y-8">
+          <div class="text-right space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+              <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="text-right space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+              <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="text-right space-y-4">
+              <h1 class="text-2xl font-bold">Dedicated Team</h1>
+              <hr class="w-[100px] h-[10px]">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+      </div>
+
+  </div>
+</section>
 
 </main>
 
-<footer  class="bg-black mt-[700px]  p-[40px] ml-[100px] mr-28"> 
+<footer  class="bg-black mt-[100px]  p-[40px] ml-[100px] mr-28"> 
 
 <div class=" flex justify-center items-center gap-8 mt-16">
 
@@ -531,7 +551,7 @@
 </div>
 
 <div class=" justify-center mt-5">
-<div class="text-white gap-6 flex justify-center items-center text-center">
+<div class="text-white gap-6 flex flex-col lg:flex-row justify-center items-center text-center">
 <p>Home</p>
 <p>About Us</p>
 <p>Shop</p>
